@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <link rel="stylesheet" href="css/contact.css">
+            <h1 >Contact Form</h1>
+            <h2>Name</h2>
+            <input type="text" id="name">
+            <h2>Email</h2>
+            <input type="email" id="email">
+            <h2>Message</h2>
+            <input type="text" id="message"><br>
+            <button type="button" id="save_btn">Send</button>
+            <button type="button" id="reset_btn">Reset</button>
+        </form>
+    </div>
+     
+</body>
+<script>
+    let name=document.getElementById("name");
+    let email=document.getElementById("email");
+    let message=document.getElementById("message");
+
+    save_btn.onclick=function()
+   {
+    localStorage.setItem("name",name.value)
+    localStorage.setItem("email",email.value)
+    localStorage.setItem("message",message.value)  
+   }
+
+   reset_btn.onclick=function()
+   {
+      localStorage.clear();
+   }
+</script>
+</html>
