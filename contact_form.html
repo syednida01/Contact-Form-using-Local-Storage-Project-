@@ -15,6 +15,12 @@
             <input type="text" id="name">
             <h2>Email</h2>
             <input type="email" id="email">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="india">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            </select>
             <h2>Message</h2>
             <input type="text" id="message"><br>
             <button type="button" id="save_btn">Send</button>
@@ -27,12 +33,14 @@
     let name=document.getElementById("name");
     let email=document.getElementById("email");
     let message=document.getElementById("message");
+    let country=document.getElementById("country");
 
     save_btn.onclick=function()
    {
     localStorage.setItem("name",name.value)
     localStorage.setItem("email",email.value)
-    localStorage.setItem("message",message.value)  
+    localStorage.setItem("message",message.value)
+    localStorage.setItem("country",country.value)    
    }
 
    reset_btn.onclick=function()
