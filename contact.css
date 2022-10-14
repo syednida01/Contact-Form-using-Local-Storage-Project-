@@ -31,6 +31,7 @@ button{
     border-radius: 6px;
     color: #fff;
     background-color: salmon;
+    border-radius: 2px;
 }
 
 button:visited{
