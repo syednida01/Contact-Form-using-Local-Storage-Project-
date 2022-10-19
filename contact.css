@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     font-size: 20px;
     font-family:Verdana, sans-serif;
@@ -29,7 +29,7 @@ input{
 
 button{
     border-radius: 6px;
-    color: #fff;
+    color: yellow;
     background-color: salmon;
     border-radius: 2px;
 }
